@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import url("rwd.css");
+/* CSS Document */
+
+body{
+	font-family:Helvetica Neue, Helvetica, Arial," sans-serif", "微軟正黑體";
+	margin:0;
+	padding:0;
+	background:rgba(0,0,0,0);
+	color:rgb(96, 40, 135);
+}
+
+/*~~~~~~~~~~~~~~~~~~nav bar~~~~~~~~~~~~~~~~~~*/
+nav{
+	background:rgba(255,255,255,1);
+	width:100%;
+	text-align:left;
+	position: -webkit-fixed;
+	position: fixed;
+	top:0;/*sticky的時候黏在網站的top:0位子，如果bottom:0就是黏在最下面，以此類推*/
+	font-size: 12pt;
+	z-index: 1000000000;
+}
+
+nav ul{
+	margin-left: 30px;
+}
+nav li{
+	display: inline-block;
+	padding-left:30px;
+}
+
+nav li a{
+	float:right;
+	display: inline-block;
+	color:rgb(96, 40, 135);
+	text-decoration: none;  /*將底線去除*/
+}
+
+nav li a:hover{
+	color: rgba(246,192,255,1.00);
+	font-style: italic;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~article01~~~~~~~~~~~~~~~~~~*/
+#article01{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background:url(../image/random04.jpg)no-repeat;
+	background-size: cover;
+}
+
+#article01 aside{
+	margin-top: 120px;
+	margin-left: 5%;
+	margin-bottom: 10%;
+}
+
+#article01 a{
+	width: 30%;
+	display: block;
+	padding: 15px 15px;
+	color:rgb(96, 40, 135);
+	text-decoration: none;
+	font-size: 12pt;
+	border-radius: 10px;
+	background: rgba(246,192,255,1.00);
+	margin-right: 50%;
+}
+
+#article01 a:hover{
+	color: #fff;
+	border-radius: 20px;
+	background:#48ced8;
+	margin-right: 50%;
+}
+
+/*~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~*/
+footer{
+	text-align: center;
+	font-size: 10pt;
+}

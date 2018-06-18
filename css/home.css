@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*完全滿版的狀態，不要有白邊*/
+html, body{
+	margin: 0;
+	padding: 0;
+	color:rgb(96, 40, 135);
+	font-family:Helvetica Neue, Helvetica, Arial," sans-serif", "微軟正黑體";
+}
+
+p{
+	font-size: 12pt;
+	line-height: 1.5em;　
+}
+
+/*banner*/
+.banner{
+	position: relative;
+	z-index: 1000000000;
+	top:80px;
+}
+
+.anitext{/*設定成動畫停止時的位子和樣式*/
+	position: absolute;
+	left: 5%;
+	top:40%;/*動畫跑完之後文字框框的高度*/
+	background: rgba(0,0,0,0.00);
+	opacity:1;
+
+	-webkit-animation-name:ant;/*動畫可以亂取名*/
+	animation-name:ant;
+	animation-duration:2s;
+	
+}
+@keyframes ant{
+	from{top:40%; left:0; opacity: 0; background: rgba(0,0,0,0.00);}
+	to{top:40%; left:5; opacity: 1; background: rgba(0,0,0,0.00);}
+}
+
+
+
+article{
+	position:fixed;/*位置固定*/
+	left:4%;
+	bottom:8%;
+	z-index:100000000;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:rgba(255,233,253,0.42);
+	border-radius: 5px;
+}
+
+
+
+nav{
+	position:fixed;/*位置固定*/
+	right:5%;
+	bottom:6%;
+	z-index:100000000;
+}
+.rule01{/*加點點是因為 這是html裡面自定義的標籤<div class=blabla> id=blablabla的話用井字號*/
+	width: 262px;
+	height:88px;
+	background: rgba(0,0,0,0.00) url(../image/button.png)no-repeat;/*color/image/repeat*//*只希望圖片出現一次*/
+	background-position: 0px 0px; /*X軸Y軸位置（圖片和background的相對位置），滑鼠滑過去之前圖片壓在background上的是左邊那個白色的箭頭，把before和hover的圖片坐在一起，透過background-position去改變*/
+	background-size: 200%/*因為圖片用了兩倍尺寸，所以如果要顯示單邊的箭頭就要多設*/
+}
+
+.rule01:hover{
+	background: rgba(0,0,0,0.00)  url(../image/button.png)no-repeat;
+	background-position: -262px 0px;
+	background-size: 200%/*因為圖片用了兩倍尺寸，所以如果要顯示單邊的箭頭就要多設*/
+}
+
+section{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+
+.content{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+
+.content img{
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+
+/*===============rwd details===============*/
+
+/* For tablets */
+@media only screen and (max-width: 768px) { 
+
+article{
+	font-size: 8pt;
+	
+}
+	
+.banner{
+	top:30px;
+}
+	
+#titleimg img{
+	width:55%;
+}
+}
+
+
+/* For tablets */
+@media only screen and (max-width: 650px) { 
+
+
+
+.rule01{/*加點點是因為 這是html裡面自定義的標籤<div class=blabla> id=blablabla的話用井字號*/
+	width: 131px;
+	height:44px;
+	background: rgba(0,0,0,0.00) url(../image/button2.png)no-repeat;/*color/image/repeat*//*只希望圖片出現一次*/
+	background-position: 0px 0px; /*X軸Y軸位置（圖片和background的相對位置），滑鼠滑過去之前圖片壓在background上的是左邊那個白色的箭頭，把before和hover的圖片坐在一起，透過background-position去改變*/
+	background-size: 200%/*因為圖片用了兩倍尺寸，所以如果要顯示單邊的箭頭就要多設*/
+}
+
+.rule01:hover{
+	background: rgba(0,0,0,0.00)  url(../image/button2.png)no-repeat;
+	background-position: -131px 0px;
+	background-size: 200%/*因為圖片用了兩倍尺寸，所以如果要顯示單邊的箭頭就要多設*/
+}
+}

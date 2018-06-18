@@ -1,0 +1,215 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>我要打9個！｜RULE</title>
+<link href="css/rule.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	
+
+	//Click event to scroll to top
+
+	$('#a1').click(function(){
+
+		$('html, body').animate({scrollTop : 1000},800);
+
+		return false;
+
+	});
+
+	
+
+	$('#a2').click(function(){
+
+		$('html, body').animate({scrollTop : 2000},800);
+
+		return false;
+
+	});
+
+	
+
+	$('#a3').click(function(){
+
+		$('html, body').animate({scrollTop : 1500},800);
+
+		return false;
+
+	});
+
+	
+
+	$('#a4').click(function(){
+
+		$('html, body').animate({scrollTop : 1500},800);
+
+		return false;
+
+	});
+	
+	
+	$('#a5').click(function(){
+
+		$('html, body').animate({scrollTop : 2500},800);
+
+		return false;
+
+	});
+	
+	
+	$('#a6').click(function(){
+
+		$('html, body').animate({scrollTop : 2000},800);
+
+		return false;
+
+	});
+	
+	
+	$('#a7').click(function(){
+
+		$('html, body').animate({scrollTop : 2500},800);
+
+		return false;
+
+	});
+	
+	
+	$('#a8').click(function(){
+
+		$('html, body').animate({scrollTop : 2000},800);
+
+		return false;
+
+	});
+
+	
+	$('#a0').click(function(){
+
+		$('html, body').animate({scrollTop : 500},800);
+
+		return false;
+
+	});
+	
+
+});
+
+</script>
+
+</head>
+
+<body>
+<header>
+<nav>
+      <ul>
+        <img src="image/biglogo2.png" width="15%" alt="我要打9個！">
+       <li><a href="home.html" target="_self">HOME</a></li>
+        <li><a href="#">RULE</a></li>
+        <li><a href="more.html" target="_self">MORE</a></li>
+         <li><a href="credit.html" target="_self">CREDIT</a></li>
+      </ul>  
+</nav>
+</header>
+
+<!--~~~~~~~~~~~~~~article01~~~~~~~~~~~~~~-->
+<article id="article01">
+
+<div class="col-m-6 col-6">
+	<aside><h2>RULE | 9號球的玩法</h2>
+	<p>玩家將白色母球打出，最先須碰到檯面上數字最小之子球，並讓最小子球落袋。這樣這竿就算成功，
+	同一個玩家可以繼續留在場上打，一竿一竿照數字小到大讓子球落袋，中途若是失誤就要輪對手上場。最先讓9號球落入袋子裡的玩家就是該局的優勝者！<br>
+	小插曲：玩家中途還可以使出安全球Push-out<a href="more.html" target="_self">（什麼是Push-out?）</a><br><br>
+	講這麼多還是霧煞煞？沒關係，一起來模擬看看比賽的流程吧！<br>
+	<div class="link"><a href="#one" id="a0">Go Go Go!!!  ▼</a></div></p>
+	
+	</aside>
+</div>
+</article>
+
+<!--~~~~~~~~~~~~~~article02~~~~~~~~~~~~~~-->
+<article id="article02">
+	<aside><h3>首先，你把白色母球打出去了，然後...請選擇！</h3></aside>	
+	<div class="col-m-6 col-6">
+	<a href="#s1" id="a1">母球成功最先打到檯面上數字最小子球！</a>
+	</div>
+	
+	<div class="col-m-6 col-6">
+	<a href="#s3" id="a2">哎呦，不小心犯規ㄌ！<br>
+			最先打到的不是檯面上數字最小子球<br>
+				OR你根本啥都沒打到<br>
+				OR你讓母球掉進袋子裡了<br>
+				OR其他犯規</a>
+	</div>
+</article>
+
+
+<!--~~~~~~~~~~~~~~section01~~~~~~~~~~~~~~-->
+<section id="s1">
+
+
+	<a href="#s2" id="a3">數字最小子球順利入袋！</a>
+	
+	
+
+	<a href="#s2" id="a4">數字最小子球打到了其他子球，兩顆都順利入袋！</a>
+	
+	
+
+	<a href="#s4" id="a5">數字最小子球打到了9號子球，兩顆都順利入袋！</a>
+	
+	
+
+	<a href="#s3" id="a6">最小子球沒入袋，反而讓其他子球提早入袋了</a>
+	
+	
+</section>
+
+<!--~~~~~~~~~~~~~~section02~~~~~~~~~~~~~~-->
+<section id="s2">
+<aside><h3>情況不賴，繼續加油！</h3>
+<p>恭喜你這竿成功囉！
+你可以繼續留在場上，照順序由小至大用母球把剩下的子球打入袋中。</p></aside>
+<div class="col-m-6 col-6">
+	<a href="#s4" id="a7">「我成功把9號球打入袋中了！」</a>
+	</div>
+	
+	<div class="col-m-6 col-6">
+	<a href="#s3" id="a8">「那如果我接下來不小心失誤了？」</a>
+	</div>
+</section>
+
+<!--~~~~~~~~~~~~~~section03~~~~~~~~~~~~~~-->
+<section id="s3">
+<div class="col-m-7 col-7">
+	<aside><h2>你犯規了ＱＱ換人打囉</h2>
+	<p>1.母球最先打到的不是檯面上數字最小子球<br>
+		2.你根本啥都沒打到<br>
+		3.你最先打到數字最小子球，但是最小子球沒入袋，反而讓其他子球提早入袋了<br>
+		4.你讓母球掉進袋子裡了<br><br>
+		<a href="more.html">其他犯規  ▶︎</a><br>
+		換你的對手上場，對手可在出杆前自由把母球擺在他高興的地方。（自由球）</p>
+	</aside>
+</div>
+</section>
+
+<!--~~~~~~~~~~~~~~section04~~~~~~~~~~~~~~-->
+<section id="s4">
+<div class="col-m-7 col-7">
+	<aside><h2>恭喜恭喜，超級恭喜！</h2>
+	<p>你成功搶先對手一步把9號球打入袋中了，這場比賽是你贏囉！<br>
+		PS:數字最小子球打到了9號子球，兩顆都順利入袋，這種情況叫做「吻球勝Kiss Win」，很帥吧！
+		</p>
+	</aside>
+</div>
+</section>
+
+<footer>
+	<p> &copy; 2018戊戌梅竹賽前規則小百科-撞球｜Made by Christie Kuo</p>
+</footer>
+
+</body>
+</html>
